@@ -49,42 +49,15 @@
 						<button><i class="fab fa-sistrix"></i></button>
 					</form>
 					<ul>
-						<li data-s="baidu" target="_blank"><i style="background-image: url(/gzw.jpg);"></i>果子味枪神</li>
+<a href="http://pay.iqovo.cn/so"><li data-s="cc" target="_blank"><i style="background-image: url(/gzw.jpg);"></i>果子味枪神</li></a>
 						<!-- <li data-s="google" target="_blank"><i style="background-image: url(icon/g.svg);"></i>G</li>-->
 					</ul>
 				</div>
 			</div>
 			<script>
 				$(document).ready(function() {
-					//判断窗口大小，添加输入框自动完成
-					var wid = $("body").width();
-					if (wid < 640) {
-						$(".wd").attr('autocomplete', 'off');
-					}
 
-					function sub() {
-						var nm = $(".wd").attr('name');
-						if (nm == "q") {
-							$("form").attr('action', 'http://pic.iqovo.cn:3366/');
-							$("form").submit();
-						} else {
-							$("form").attr('action', 'http://pic.iqovo.cn:3366/');
-							$("form").submit();
-						}
 
-					}
-					//按钮
-					$(".sou li").click(function() {
-						var dt = $(this).attr('data-s');
-						if (dt == "google") {
-							$(".wd").attr('name', 'q');
-							sub();
-						} else {
-							$(".wd").attr('name', 'wd');
-							sub();
-						}
-
-					});
 					//菜单点击
 					$("#menu").click(function(event) {
 						$(this).toggleClass('on');
