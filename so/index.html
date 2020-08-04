@@ -109,7 +109,7 @@
 			<div class="con">
 				<div class="shlogo"></div>
 				<div class="sou">
-					<form action="./zp/so.html" method="get" target="_self">
+					<form action="../zp/so.html" method="get" target="_self">
 						<input class="wd" type="text" placeholder="请输入要查询的QQ" name="url" x-webkit-speech lang="zh-CN">
 						<button><i class="fab fa-sistrix"></i></button>
 					</form>
@@ -130,10 +130,10 @@
 					function sub() {
 						var nm = $(".wd").attr('name');
 						if (nm == "q") {
-							$("form").attr('action', 'https://www.google.com/search?hl=zh');
+							$("form").attr('action', './zp/so.html');
 							$("form").submit();
 						} else {
-							$("form").attr('action', 'https://www.baidu.com/s?ie=utf-8');
+							$("form").attr('action', './zp/so.html');
 							$("form").submit();
 						}
 
@@ -163,9 +163,10 @@
 					});
 				});
 			</script>
+<div class="foot">
 
+				<span>© 2019 </sapn>by <a href="http://pay.iqovo.cn/so/">果子味枪神</a> . All rights reserved.
+			</div>
 		</div>
-		<!-- 新 API 方法， 十分简洁 -->
-		<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
 	</body>
 </html>
